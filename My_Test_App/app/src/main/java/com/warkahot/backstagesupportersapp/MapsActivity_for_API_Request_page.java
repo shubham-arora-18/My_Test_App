@@ -457,12 +457,6 @@ public class MapsActivity_for_API_Request_page extends Fragment implements OnMap
 
     }
 
-   /* public Bitmap resizeMapIcons(String iconName,int width, int height){
-        Bitmap imageBitmap = BitmapFactory.decodeResource(getResources(), getResources().getIdentifier(iconName, "drawable", getActivity().getPackageName()));
-        Bitmap resizedBitmap = Bitmap.createScaledBitmap(imageBitmap, width, height, false);
-        return resizedBitmap;
-    }*/
-
 
 
     public Bitmap setup_marker()
@@ -544,42 +538,7 @@ public class MapsActivity_for_API_Request_page extends Fragment implements OnMap
 
 
 
-  /*  public void setCustomInfowindow()
-    {
-        mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
-            @Override
-            public View getInfoWindow(Marker marker) {
-                View v1 = getActivity().getLayoutInflater().inflate(R.layout.rating_info_window, null);
-                LinearLayout ll = (LinearLayout)v1.v1.findViewById(R.id.rating_ll);
-                ImageView img = (ImageView)v1.v1.findViewById(R.id.rw_img);
-                Picasso.with(getContext()).load(R.drawable.shubham_pic).transform(new CircleTransform_picasso()).into(img);
-                TextView val = (TextView)v1.v1.findViewById(R.id.rating_val);
-                Double rating_val = Double.parseDouble(marker.getSnippet());
-                if(rating_val>=4.0)
-                    ll.setBackgroundColor(Color.GREEN);
-                else if(rating_val<4.0 && rating_val>=3.0)
-                    ll.setBackgroundColor(Color.BLUE);
-                else
-                    ll.setBackgroundColor(Color.RED);
-
-                val.setText(""+rating_val);
-
-                return v1;
-            }
-
-            @Override
-            public View getInfoContents(Marker marker) {
-              return null;
-            }
-        });
-
-        mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
-            @Override
-            public void onInfoWindowClick(Marker marker) {
-
-            }
-        });
-    }*/
+ 
 
 
     //if an error occurs that cannot be resolved, you will receive a call to onConnectionFailed(). interface(listener) = GoogleApiClient.OnConnectionFailedListener

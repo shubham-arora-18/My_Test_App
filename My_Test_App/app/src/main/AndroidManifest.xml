@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.warkahot.backstagesupportersapp">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/clinic_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/No_status_bar">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAiYnplk7hHIuL9kr9kRY9ORTALOfb6TqI" />
+
+        <activity
+            android:name=".SignUp_page"
+            android:label="@string/app_name"
+            android:theme="@style/No_status_bar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Map_Page"
+            android:label="@string/app_name"
+            android:theme="@style/No_status_bar">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
